@@ -1,0 +1,19 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+``` {r}
+ggplot(iris, aes(x = Petal.Length)) + 
+  geom_histogram(fill = "blanchedalmond",
+                 color = "dodgerblue4", 
+                 bins=20) +
+  theme_bw() + labs(x= "Petal Length")->thing
+thing
+ggsave("practice_plot.png", thing)
+```
