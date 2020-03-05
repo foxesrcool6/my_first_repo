@@ -12,8 +12,8 @@ library(tidyverse)
 ggplot(iris, aes(x = Petal.Length)) + 
   geom_histogram(fill = "blanchedalmond",
                  color = "dodgerblue4", 
-                 bins=20) +
-  theme_bw() + labs(x= "Petal Length")->thing
+                 bins=40) +
+  theme_bw() + labs(x= "Petal length1")->thing
 thing
 ggsave("practice_plot.png", thing)
 ```
